@@ -1,11 +1,15 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+* {
+    /* espaçamento */
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Bangers", system-ui;
 }
 
-@theme inline {
+:root {
+   --background: #ffffff;
+  --foreground: #171717;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
@@ -19,8 +23,91 @@
   }
 }
 
+html {
+    /* altura */
+    height: 100%;
+}
+
 body {
-  background: var(--background);
-  color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.home {
+  background-size: cover;
+  background-position: center;
+}
+
+.nome {
+    /* troca a cor do texto */
+    color: #ff3cac;
+    /* troca o tamanho do texto */
+    font-size: 360px;
+    position: absolute;
+    bottom: 500px;
+    /* alinhamento do texto */
+    text-align: center;
+    /* largura */
+    width: 100%;
+}
+
+.personagem {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    /* altura */
+    height: 700px;
+}
+
+.textos {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+}
+
+.etiqueta {
+    font-size: 26px;
+    color: #ffd319;
+}
+
+h1 {
+    font-size: 72px;
+    color: #ffffff;
+}
+
+.texto-apoio {
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.menu {
+    position: absolute;
+    bottom: 40px;
+    /* caixa agora é flexivel */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* espaçamento */
+    gap: 20px;
+}
+
+.avatar {
+    width: 60px;
+    height: 60px;
+    /* arrendodamento dos itens */
+    border-radius: 50%;
+    /* Como o objeto(imagem) se encaixa */
+    object-fit: cover;
+    object-position: top;
+    border: 2px solid #ffffff;
+}
+
+.voce {
+    /* troca a cor de fundo */
+    background-color: #ffd319;
+    /* espaçamento interno */
+    padding: 20px;
+    border-radius: 50%;
 }
