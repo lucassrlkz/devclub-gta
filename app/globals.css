@@ -1,113 +1,119 @@
 @import "tailwindcss";
 
 * {
-    /* espaçamento */
-    margin: 0;
-    box-sizing: border-box;
-    font-family: "Bangers", system-ui;
+	/* espaçamento */
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Bangers", system-ui;
 }
 
 :root {
-   --background: #ffffff;
-  --foreground: #171717;
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+	--background: #ffffff;
+	--foreground: #171717;
+	--color-background: var(--background);
+	--color-foreground: var(--foreground);
+	--font-sans: var(--font-geist-sans);
+	--font-mono: var(--font-geist-mono);
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+	:root {
+		--background: #0a0a0a;
+		--foreground: #ededed;
+	}
 }
 
 html {
-    /* altura */
-    height: 100%;
+	/* altura */
+	height: 100vh;
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.home {
-  background-size: cover;
-  background-position: center;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 .nome {
-    /* troca a cor do texto */
-    color: #ff3cac;
-    /* troca o tamanho do texto */
-    font-size: 360px;
-    position: absolute;
-    bottom: 500px;
-    /* alinhamento do texto */
-    text-align: center;
-    /* largura */
-    width: 100%;
+	/* troca a cor do texto */
+	color: #ff3cac;
+	/* troca o tamanho do texto */
+	font-size: 360px;
+	position: absolute;
+	bottom: 500px;
+	/* alinhamento do texto */
+	text-align: center;
+	/* largura */
+	width: 100%;
 }
 
 .personagem {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    /* altura */
-    height: 700px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
 }
 
 .textos {
-    position: absolute;
-    bottom: 40px;
-    left: 40px;
+	position: absolute;
+	bottom: 40px;
+	left: 40px;
 }
 
 .etiqueta {
-    font-size: 26px;
-    color: #ffd319;
+	font-size: 26px;
+	color: #ffd319;
 }
 
 h1 {
-    font-size: 72px;
-    color: #ffffff;
+	font-size: 72px;
+	color: #ffffff;
 }
 
 .texto-apoio {
-    font-size: 14px;
-    color: #ffffff;
+	font-size: 14px;
+	color: #ffffff;
 }
 
 .menu {
-    position: absolute;
-    bottom: 40px;
-    /* caixa agora é flexivel */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    /* espaçamento */
-    gap: 20px;
+	position: absolute;
+	bottom: 40px;
+	/* caixa agora é flexivel */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	/* espaçamento */
+	gap: 20px;
+}
+
+.menu-option {
+	padding: 0;
+	background: transparent;
+	border: 0;
+	cursor: pointer;
+}
+
+.menu-option:focus-visible {
+	outline: 2px solid #ffd319;
+	outline-offset: 4px;
+	border-radius: 50%;
 }
 
 .avatar {
-    width: 60px;
-    height: 60px;
-    /* arrendodamento dos itens */
-    border-radius: 50%;
-    /* Como o objeto(imagem) se encaixa */
-    object-fit: cover;
-    object-position: top;
-    border: 2px solid #ffffff;
+	width: 60px;
+	height: 60px;
+	/* arrendodamento dos itens */
+	border-radius: 50%;
+	/* Como o objeto(imagem) se encaixa */
+	object-fit: cover;
+	object-position: top;
+	border: 2px solid #ffffff;
 }
 
 .voce {
-    /* troca a cor de fundo */
-    background-color: #ffd319;
-    /* espaçamento interno */
-    padding: 20px;
-    border-radius: 50%;
+	/* troca a cor de fundo */
+	background-color: #ffd319;
+	/* espaçamento interno */
+	padding: 20px;
+	border-radius: 50%;
 }
