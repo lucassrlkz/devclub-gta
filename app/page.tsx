@@ -8,9 +8,9 @@ import lucia from "../public/assests/lucia.png";
 import background from "../public/assests/background2.jpg";
 
 const characters = [
-  { name: "Lucia", image: lucia },
-  { name: "Jason", image: jason },
-  { name: "CJ", image: cj },
+  { name: "Lucia", image: lucia, color: "#ff3cac" },
+  { name: "Jason", image: jason, color: "#00b2c9" },
+  { name: "CJ", image: cj, color: "#7ed37e" },
 ];
 
 export default function Home() {
@@ -23,13 +23,13 @@ export default function Home() {
 	    width: "100vh",
 	    height: "100vh" }}>
 
-      <p className="nome">{selectedCharacter.name}</p>
+      <p className="nome" style={{color: selectedCharacter.color}}>{selectedCharacter.name}</p>
       <Image
         className="personagem"
         src={selectedCharacter.image}
         alt={selectedCharacter.name}
         loading="eager"
-        style={{ height: "700px", width: "auto" }}
+        style={{ height: "700px", width: "auto"  }}
       />
       <div className="textos">
         <p className="etiqueta">Selecione o seu Personagem</p>
