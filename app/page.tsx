@@ -5,7 +5,6 @@ import { useState } from "react";
 import cj from "../public/assests/cj.png";
 import jason from "../public/assests/jason.png";
 import lucia from "../public/assests/lucia.png";
-import background from "../public/assests/background2.jpg";
 
 const characters = [
   { name: "Lucia", image: lucia, color: "#ff3cac" },
@@ -17,11 +16,7 @@ export default function Home() {
   const [selectedCharacter, setSelectedCharacter] = useState(characters[0]);
 
   return (
-    <div className="home" style={{ backgroundImage: `url("${background.src}")`,
-      backgroundSize: "cover",
-	    backgroundPosition: "center",
-	    width: "100vh",
-	    height: "100vh" }}>
+    <main className="home">
 
       <p className="nome" style={{color: selectedCharacter.color}}>{selectedCharacter.name}</p>
       <Image
@@ -58,6 +53,6 @@ export default function Home() {
         ))}
         <button className="voce">📸</button>
       </div>
-    </div>
+    </main>
   );
 }
